@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+<script src="Lab.js"> </script>;
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -571,6 +572,47 @@ clear: left;
     border: 3px solid #73AD21;
     padding: 10px;
 }
+
+
+h3
+{
+text-align: center;
+
+}
+
+
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #337ab7;
+}
 </style>
 <body>
 
@@ -584,7 +626,23 @@ clear: left;
 
       }
     </script>
-
+		<!-- Navbar -->
+		<ul>
+		  <li><a class="active" href="https://danielfrancisolivieri.github.io/">Home</a></li>
+		  <li><a href="https://danielfrancisolivieri.github.io/Hero/">Story</a></li>
+		  <li><a href="#">Character Generator</a></li>
+		  <li><a href="#">Quoter</a></li>
+		</ul>
+		
+		<!-- Navbar on small screens -->
+		<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+		  <ul class="w3-navbar w3-left-align w3-large w3-black">
+		    <li><a class="w3-padding-large" href="https://danielfrancisolivieri.github.io/">Home</a></li>
+		    <li><a class="w3-padding-large" href="https://danielfrancisolivieri.github.io/Hero/">Story</a></li>
+		    <li><a class="w3-padding-large" href="#">Character Generator</a></li>
+		    <li><a class="w3-padding-large" href="#">Quoter</a></li>
+		  </ul>
+		</div>
 <!-- Header -->
 <div class="w3-container w3-red w3-center w3-padding-128">
   <h1 id = "#quote" class="w3-margin w3-jumbo">Quote Maker</h1>
@@ -598,20 +656,7 @@ clear: left;
 </div>
 </div>
 <!--
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>What This Does</h1>
-      <h5 class="w3-padding-32">Generates false quotes</h5>
-    </div>
 
-    <div class="w3-third w3-center">
-    <!--  <i class="fa fa-anchor w3-padding-64 w3-text-red"></i> -->
-	  <i class="fa fa-pencil-square-o w3-padding-64 w3-text-red" id = "pencilIcon"></i>
-    </div>
-  </div>
-</div>
 
 </footer>
 
